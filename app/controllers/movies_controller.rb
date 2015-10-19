@@ -1,5 +1,6 @@
 # This file is app/controllers/movies_controller.rb
 class MoviesController < ApplicationController
+  
   def index
     @movies = Movie.all
   end
@@ -10,7 +11,20 @@ class MoviesController < ApplicationController
     @movie = Movie.find(id) # look up movie by unique ID
     # will render app/views/movies/show.html.haml by default
   end
+  
   def new
     # default: render 'new' template
   end
+ 
+  def create
+    @movie = Movie.create! movie_params
+    flash[:notice] = "#{@movie.title} was successfully created."
+    redirect_to movies_path
+  end
+  
+  private
+  def movie_params
+    params.require(:movie).permit(:title, :description, :rating, :release_date)
+  end
+  
 end
