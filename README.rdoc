@@ -1,28 +1,8 @@
-== README
+== Rotten Potatoes Application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Ruby on Rails tutorial application based on UC Berkley application using the 
+Agile Development model.
 
-Things you may want to cover:
+Completed all sections. Application should be able to create new movies,
+update the list, edit movies, as well as destroy.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
