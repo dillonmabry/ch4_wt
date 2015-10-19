@@ -1,4 +1,4 @@
--#  This file is app/views/movies/index.html.haml
+// -#  This file is app/views/movies/index.html.haml
 %h1 All Movies
 
 %table#movies
@@ -15,3 +15,4 @@
         %td= movie.rating
         %td= movie.release_date
         %td= link_to "More about #{movie.title}", movie_path(movie)
+        = link_to 'Add new movie', new_movie_path
